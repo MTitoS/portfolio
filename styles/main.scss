@@ -1,0 +1,470 @@
+//font-family: 'Poppins', sans-serif;
+
+:root {
+  //Colors
+  --white: #fff;
+  --black: #000;
+  --dark-gray: #1e1e1e;
+
+  --darker-blue: #84a7eb;
+  --nav-blue: #7cb1dc;
+  --hero-blue: #84bdeb;
+  --contact-blue: #84a7eb;
+
+  --orange: #ff7a00;
+  --darker-orange: #e47003;
+
+  --pink: #e49deb;
+  --light-pink: #fdebff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: var(--nav-blue);
+
+  a {
+    color: var(--white);
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  font-size: 0.7rem;
+
+  .logo {
+    font-weight: 600;
+
+    .logo-p1 {
+      color: var(--white);
+    }
+
+    .logo-p2 {
+      color: var(--orange);
+    }
+  }
+
+  ul {
+    display: flex;
+
+    a {
+      display: block;
+      padding: 0 1em;
+    }
+  }
+}
+
+.hero-illustration,
+.social-header {
+  display: none;
+}
+
+.hero {
+  background: var(--hero-blue);
+  color: var(--white);
+  display: grid;
+  text-align: center;
+  padding: 4em;
+
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+
+.see-more {
+  display: flex;
+  margin: 2em auto 0;
+  width: 100px;
+  font-weight: bold;
+  color: var(--orange);
+
+  font-size: 0.9rem;
+
+  span {
+    margin-right: 0.5em;
+  }
+}
+
+.scroll {
+  width: 30px;
+  margin-top: 2em;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.featured {
+  position: relative;
+
+  img {
+    border-radius: 1em;
+  }
+}
+
+.featured::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--light-pink);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--orange);
+  letter-spacing: 0.2em;
+  font-size: 1em;
+}
+
+.featured-title {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1.7em;
+  display: block;
+}
+
+.featured-desc {
+  color: var(--black);
+  margin: 3em 0;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.skills {
+  background: var(--pink);
+}
+
+.skills-container ul li {
+  background: var(--white);
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+
+  .icon-container {
+    height: 100px;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+
+    &.one {
+      width: 40px;
+    }
+    &.two {
+      width: 120px;
+    }
+    &.three {
+      width: 30px;
+    }
+  }
+
+  .skill-title {
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+
+  .featured-desc {
+    margin-bottom: 2em;
+  }
+}
+
+.portfolio-container a img {
+  border-radius: 1em;
+  margin-bottom: 5em;
+}
+
+.contact {
+  margin-top: -5em;
+
+  background: var(--contact-blue);
+  color: var(--black);
+
+  .contact-form {
+    background: var(--white);
+    border-radius: 12px;
+
+    padding: 2em;
+
+    .contact-title {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .contact-input {
+      display: flex;
+      flex-direction: column;
+      padding: 2em 4em;
+
+      label {
+        font-weight: 600;
+        font-size: 0.7rem;
+        text-align: left;
+      }
+
+      input {
+        height: 1.5em;
+      }
+
+      textarea {
+        height: 8em;
+      }
+    }
+  }
+
+  .submit-button {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+
+    width: 115px;
+    height: 30px;
+    margin: 0.5em auto 0em;
+
+    background: var(--orange);
+
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--darker-orange);
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1.5em;
+
+  background: var(--dark-gray);
+
+  .logo {
+    margin: auto 0;
+
+    .logo-p1 {
+      color: var(--white);
+    }
+
+    .logo-p2 {
+      color: var(--orange);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      padding: 1em;
+    }
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  * {
+    font-size: 110%;
+    overflow-x: hidden;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    margin: 1.7em 0;
+  }
+
+  .logo {
+    font-size: 1.12rem;
+  }
+
+  .featured-desc {
+    padding-right: 1em;
+    font-size: 1.15rem;
+  }
+
+  .featured-title {
+    font-size: 2rem;
+  }
+
+  .featured,
+  .portfolio {
+    text-align: left;
+
+    img {
+      width: 50rem;
+    }
+  }
+
+  .see-more {
+    margin-bottom: 1em;
+    font-size: 1.2rem;
+    width: 150px;
+  }
+
+  .scroll {
+    width: 200px;
+  }
+
+  .featured,
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+
+  .skills {
+    margin-top: -6em;
+  }
+
+  .skills-container {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 1em;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .contact-form {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .footer ul a {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-illustration {
+    display: unset;
+    margin: auto 0 auto -50%;
+    width: 150%;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+
+    .content {
+      background: var(--hero-blue);
+      padding: 6em 8em 6em 4em;
+      text-align: left;
+
+      h1 {
+        font-size: 3em;
+        line-height: 1.6em;
+        padding-right: 4em;
+      }
+    }
+  }
+
+  .see-more {
+    margin: unset;
+  }
+
+  .scroll {
+    margin-top: 3em;
+    margin-left: -5.5em;
+  }
+
+  .nav-container {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+  }
+
+  header {
+    background: var(--nav-blue);
+    padding: 2em 2em 2em 4em;
+  }
+
+  .social-header {
+    padding: 2em 2em 2em 2em;
+    display: flex;
+    justify-content: space-evenly;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+
+      img {
+        padding: 0 1em;
+        width: 30px;
+      }
+    }
+  }
+
+  section {
+    padding: 4em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .social-header ul li a img {
+    width: 35px;
+  }
+
+  header {
+    padding: 2.5em 2em 2em 11em;
+  }
+
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+
+  .contact {
+    padding-top: 4em;
+
+    form div label {
+      font-size: 10rem;
+    }
+  }
+}
