@@ -194,11 +194,6 @@ section {
   width: 30px;
 }
 
-.skills-container ul li .skill-title {
-  font-weight: bold;
-  font-size: 0.75rem;
-}
-
 .skills-container ul li .featured-desc {
   margin-bottom: 2em;
 }
@@ -221,7 +216,7 @@ section {
 }
 
 .contact .contact-form .contact-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
@@ -238,7 +233,7 @@ section {
 
 .contact .contact-form .contact-input label {
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   text-align: left;
 }
 
