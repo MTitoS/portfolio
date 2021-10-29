@@ -188,6 +188,11 @@ section {
     }
   }
 
+  .skill-title {
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+
   .featured-desc {
     margin-bottom: 2em;
   }
@@ -211,7 +216,7 @@ section {
     padding: 2em;
 
     .contact-title {
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 700;
     }
 
@@ -222,7 +227,7 @@ section {
 
       label {
         font-weight: 600;
-        font-size: 0.85rem;
+        font-size: 0.7rem;
         text-align: left;
       }
 
@@ -445,10 +450,6 @@ footer {
 
   header {
     padding: 2.5em 2em 2em 11em;
-
-    nav ul li {
-      padding: 0 1em;
-    }
   }
 
   section {
@@ -465,29 +466,5 @@ footer {
     form div label {
       font-size: 10rem;
     }
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .hero .content {
-    padding: 13.5em 9em 14em 10em;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  header {
-    padding-left: 14em;
-
-    ul {
-      margin-right: 8em;
-
-      li {
-        padding: 0 1em 0;
-      }
-    }
-  }
-
-  .hero .content {
-    padding: 16em 30em 18em 13em;
   }
 }
