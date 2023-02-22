@@ -28,9 +28,9 @@
 
             <nav>
                 <ul>
-                    <li><a href=#>My work</a></li>
-                    <li><a href=#>My skills</a></li>
-                    <li><a href=#>Contact me</a></li>
+                    <li><a href=#projects-anchor>Projetos</a></li>
+                    <li><a href=#skills-anchor>Habilidades</a></li>
+                    <li><a href=#contact-anchor>Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -49,11 +49,12 @@
 
     <div class="hero">
         <div class="content">
-            <h1>Making not only websites, but great experiences.</h1>
+            <h1>Olá, me chamo <br>Matheus Tito</h1>
+            <h2>Desenvolvedor front-end</h2>
 
             <div class="see-more">
                 <span>👇</span>
-                <p>See more</p>
+                <p>Ver mais</p>
             </div>
 
             <a href="#featured-anchor">
@@ -265,20 +266,28 @@
 
     <section id="featured-anchor" class="featured">
         <div class="left">
-            <div class="inner transition2">
+            <div class="featured-container">
                 <p class="subtitle">Featured Project</p>
 
                 <a href="#" class="featured-title">Effective</a>
 
-                <p class="featured-desc">Effective is a web application made for you to keep organized and productive
-                    without neglecting your health!</p>
+                <p class="featured-desc">Aplicação web feita para você se manter organizado e produtivo, sem
+                    negligenciar sua saúde em troca disso! </p>
+
+                <div class="project-btns-container">
+                    <a href="" target="_blank" class="see-more-btn project-btns">Online
+                        <!--<img src="./public/icons/online.png" />--></a>
+                    <a href="https://github.com/MTitoS/effective" target="_blank"
+                        class="see-more-btn project-btns">GitHub
+                        <!--<img src="./public/icons/github.png" />--></a>
+                </div>
             </div>
         </div>
 
         <img class="right transition2" src="public/effective.png" alt="Featured Project" />
     </section>
 
-    <section class="skills">
+    <section id="skills-anchor" class="skills">
         <div class="skills-container">
             <ul>
                 <li class="transition2">
@@ -286,8 +295,8 @@
                         <img src="public/icons/ui-ux.svg" alt="UI/UX" />
                     </div>
 
-                    <p class="skill-title">UI/UX Design</p>
-                    <p class="featured-desc skill-desc">I design your page and make it look good, with a nice flow.</p>
+                    <p class="skill-title">Design UI/UX</p>
+                    <p class="featured-desc skill-desc">Faço design de páginas utizando Figma ou outras ferramentas.</p>
                 </li>
 
                 <li class="transition2">
@@ -295,8 +304,9 @@
                         <img src="public/icons/dev.svg" alt="Development" />
                     </div>
 
-                    <p class="skill-title">Development</p>
-                    <p class="featured-desc skill-desc">I develop your page to make it functional and give you results!
+                    <p class="skill-title">Desenvolvimento</p>
+                    <p class="featured-desc skill-desc">Crio páginas responsivas, rápidas e acessíveis utilizando do
+                        básico até biblioteca e frameworks.
                     </p>
                 </li>
 
@@ -312,19 +322,19 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section id="projects-anchor" class="portfolio">
         <div class="portfolio-container transition3">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Portfolio</p>
-                    <p class="featured-title">3D Designer</p>
+                    <p class="subtitle">Portfólio</p>
+                    <p class="featured-title">Designer 3D</p>
 
-                    <p class="featured-desc">This is a portfolio made for a 3D Designer, with modern layout and clean
-                        looking colors.</p>
+                    <p class="featured-desc">Portfólio feito para um designer 3D, com layout moderno e cores elegantes.
+                    </p>
                 </div>
             </div>
 
-            <a href=""><img src="public/landingpage.png" alt="Portfolio" /></a>
+            <a href="" target="_blank"><img src="public/landingpage.png" alt="Portfolio" /></a>
         </div>
 
         <div class="portfolio-container transition3">
@@ -333,34 +343,35 @@
                     <p class="subtitle">Landing Page</p>
                     <p class="featured-title">Sunnyside</p>
 
-                    <p class="featured-desc">A colorful landing page, made as an exercise from Frontend Mentor.</p>
+                    <p class="featured-desc">Uma página colorida e divertida, feita para uma agência fictícia chamada
+                        Sunnyside.</p>
                 </div>
             </div>
 
-            <a href=""><img src="public/sunnyside.png" alt="Sunnyside" /></a>
+            <a href="" target="_blank"><img src="public/sunnyside.png" alt="Sunnyside" /></a>
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact-anchor" class="contact">
         <form class="contact-form">
-            <p class="contact-title">Contact me</p>
+            <p class="contact-title">Me contate</p>
 
             <div class="first-input contact-input">
-                <label for="name">Name</label>
+                <label for="name">Nome</label>
                 <input type="text" class="input-name" name="name" />
             </div>
 
             <div class="second-input contact-input">
-                <label for="subject">Subject</label>
+                <label for="subject">Assunto</label>
                 <input type="text" class="input-subject" name="subject" />
             </div>
 
             <div class="third-input contact-input">
-                <label for="message">Message</label>
+                <label for="message">Mensagem</label>
                 <textarea class="input-message" name="message" form="contact-form"></textarea>
             </div>
 
-            <button class="submit-button">Submit</button>
+            <button class="submit-button">Enviar</button>
         </form>
     </section>
 
@@ -371,9 +382,9 @@
         </div>
 
         <ul>
-            <li><a href=#>My work</a></li>
-            <li><a href=#>My skills</a></li>
-            <li><a href=#>Contact me</a></li>
+            <li><a href=#projects-anchor>Projetos</a></li>
+            <li><a href=#skills-anchor>Habilidades</a></li>
+            <li><a href=#contact-anchor>Contato</a></li>
         </ul>
 
         <img src="public/icons/logorounded.png" alt="Logo" />

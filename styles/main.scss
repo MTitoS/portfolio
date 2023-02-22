@@ -56,6 +56,9 @@ header {
   font-size: 0.7rem;
 
   .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 600;
 
     .logo-p1 {
@@ -91,6 +94,11 @@ header {
 
   h1 {
     font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    margin: 1em 0 3em;
   }
 }
 
@@ -159,6 +167,11 @@ section {
   font-size: 1.1em;
   line-height: 1.8em;
   font-weight: 500;
+}
+
+.project-btns-container {
+  display: flex;
+  margin: 2em 1em;
 }
 
 .skills {
@@ -306,13 +319,26 @@ footer {
     overflow-x: hidden;
   }
 
-  .hero h1 {
-    font-size: 2.2rem;
-    margin: 1.7em 0;
+  .hero {
+    h1 {
+      font-size: 3rem;
+      margin: 0.8em 0;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 5em;
+    }
   }
 
   .logo {
     font-size: 1.12rem;
+
+    .logo-icon {
+      display: block;
+      width: 40px;
+      margin-right: 1em;
+    }
   }
 
   .featured-desc {
@@ -456,8 +482,16 @@ footer {
     padding: 10em 10em 4em 10em;
   }
 
-  .hero .content {
-    padding: 6em 8em 6em 10em;
+  .hero {
+    .content {
+      padding: 6em 8em 6em 10em;
+
+      @media only screen and (min-height: 1024px) {
+        h1 {
+          font-size: 2.9rem;
+        }
+      }
+    }
   }
 
   .contact {
@@ -466,5 +500,11 @@ footer {
     form div label {
       font-size: 10rem;
     }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero h1 {
+    font-size: 20rem;
   }
 }
