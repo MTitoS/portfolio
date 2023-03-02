@@ -171,7 +171,37 @@ section {
 
 .project-btns-container {
   display: flex;
+  justify-content: space-evenly;
   margin: 2em 1em;
+
+  .project-btns {
+    text-decoration: none;
+    padding: 0.6em 2em;
+    border-radius: 12px;
+    margin-inline: 2em;
+
+    img {
+      margin-left: 0.3em;
+      margin-block: auto;
+      width: 1em;
+    }
+  }
+
+  .see-online-btn {
+    color: #000;
+    font-weight: 600;
+    background-color: var(--darker-orange);
+  }
+
+  .see-github-btn {
+    color: #fff;
+    font-weight: 500;
+    background-color: var(--dark-gray);
+
+    img {
+      background-color: #fff;
+    }
+  }
 }
 
 .skills {
@@ -348,6 +378,14 @@ footer {
 
   .featured-title {
     font-size: 2rem;
+  }
+
+  .project-btns-container {
+    margin: 2em 0em;
+
+    .project-btns {
+      padding: 0.6em 1.3em;
+    }
   }
 
   .featured,

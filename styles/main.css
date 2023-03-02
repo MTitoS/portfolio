@@ -75,10 +75,6 @@ header .logo .logo-p2 {
   color: var(--orange);
 }
 
-header .logo .logo-icon {
-  display: none;
-}
-
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,6 +175,45 @@ section {
   font-size: 1.1em;
   line-height: 1.8em;
   font-weight: 500;
+}
+
+.project-btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 2em 1em;
+}
+
+.project-btns-container .project-btns {
+  text-decoration: none;
+  padding: 0.6em 2em;
+  border-radius: 12px;
+  margin-inline: 2em;
+}
+
+.project-btns-container .project-btns img {
+  margin-left: 0.3em;
+  margin-block: auto;
+  width: 1em;
+}
+
+.project-btns-container .see-online-btn {
+  color: #000;
+  font-weight: 600;
+  background-color: var(--darker-orange);
+}
+
+.project-btns-container .see-github-btn {
+  color: #fff;
+  font-weight: 500;
+  background-color: var(--dark-gray);
+}
+
+.project-btns-container .see-github-btn img {
+  background-color: #fff;
 }
 
 .skills {
@@ -359,6 +394,12 @@ footer img {
   .featured-title {
     font-size: 2rem;
   }
+  .project-btns-container {
+    margin: 2em 0em;
+  }
+  .project-btns-container .project-btns {
+    padding: 0.6em 1.3em;
+  }
   .featured,
   .portfolio {
     text-align: left;
@@ -504,8 +545,8 @@ footer img {
 }
 
 @media only screen and (min-width: 1440px) {
-  .hero .contact h1 {
-    font-size: 10rem;
+  .hero h1 {
+    font-size: 20rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
